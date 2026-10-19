@@ -6,7 +6,7 @@ The code here estimates planetary boundary layer height (PBLh) given input .csv 
 Estimates are run using the code `handler.py`, as follows:
 
 ```
-lidarLoc inPath [startDate] [endDate]
+python handler.py lidarLoc inPath [startDate] [endDate]
 ```
 
 for the 4-letter site code `lidarLoc` (e.g. CYYZ for Pearson Airport) and the path pointing to the input data `inPath`. The arguments `startDate` and `endDate` are optional but default to the case study dates. Pass `python handler.py -h` for more options. Output files are saved in a new folder labeled "processed" in the input directory.
